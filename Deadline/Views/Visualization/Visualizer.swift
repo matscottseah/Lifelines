@@ -11,24 +11,24 @@ struct Visualizer: View {
     @EnvironmentObject var userData: UserData
     
     var periods: [Period] {
-        let periodsSinceBirth = (1...userData.wholeWeeksSinceBirth).map { Period(id: $0, shape: .circle, color: .red) }
-        let periodsTillDeath =  (userData.wholeWeeksSinceBirth+1...userData.wholeWeeksSinceBirth+userData.wholeWeeksTillDeath).map { Period(id: $0, shape: .circle, color: .green) }
+        let periodsSinceBirth = (1...userData.wholeWeeksSinceBirth).map { Period(id: $0, shape: .square, color: .red, size: 10) }
+        let periodsTillDeath =  (userData.wholeWeeksSinceBirth+1...userData.wholeWeeksSinceBirth+userData.wholeWeeksTillDeath).map { Period(id: $0, shape: .square, color: .green, size: 10) }
         return periodsSinceBirth + periodsTillDeath
 //        [Period](repeating: Period(shape: .circle, color: .red), count: userData.wholeWeeksSinceBirth) +
 //        [Period](repeating: Period(shape: .circle, color: .green), count: userData.wholeWeeksTillDeath)
     }
 
-    let columns = [GridItem](repeating: GridItem(.fixed(5), spacing: 5), count: 52)
+//    let columns = [ GridItem(.adaptive(minimum: 5)) ]
+    let columns = Array(repeating: GridItem(.flexible(minimum: 1, maximum: 10), spacing: 5), count: 26)
     
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: columns, spacing: 5) {
+            LazyVGrid(columns: columns) {
                 ForEach(periods, id: \.id) { period in
                     period
                 }
             }
         }
-        .padding(.horizontal)
     }
 }
 

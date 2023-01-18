@@ -31,7 +31,7 @@ struct UserInput: View {
                     .frame(width: 50)
             }
         }
-        .padding()
+            .padding()
     }
 }
 

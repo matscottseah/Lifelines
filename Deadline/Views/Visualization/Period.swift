@@ -15,6 +15,7 @@ struct Period: View {
     public var id: Int
     public var shape: shapes
     public var color: Color
+    public var size: CGFloat
     
     var body: some View {
         Group {
@@ -27,11 +28,12 @@ struct Period: View {
                     .fill(color)
             }
         }
+        .frame(width: size, height: size)
     }
 }
 
 struct Period_Previews: PreviewProvider {
     static var previews: some View {
-        Period(id: 1, shape: .circle, color: .green)
+        Period(id: 1, shape: .circle, color: .green, size: 5)
     }
 }
