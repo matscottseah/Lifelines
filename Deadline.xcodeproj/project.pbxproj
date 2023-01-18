@@ -11,6 +11,10 @@
 		BC2EBCC12973C0FC0011F132 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCC02973C0FC0011F132 /* ContentView.swift */; };
 		BC2EBCC32973C0FF0011F132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2EBCC22973C0FF0011F132 /* Assets.xcassets */; };
 		BC2EBCC62973C0FF0011F132 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2EBCC52973C0FF0011F132 /* Preview Assets.xcassets */; };
+		BC2EBCCD2973C56A0011F132 /* UserInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCCC2973C56A0011F132 /* UserInput.swift */; };
+		BC2EBCCF2973C9040011F132 /* Visualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCCE2973C9040011F132 /* Visualizer.swift */; };
+		BC2EBCD12973CAAB0011F132 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCD02973CAAB0011F132 /* UserData.swift */; };
+		BC2EBCD32974DE360011F132 /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCD22974DE360011F132 /* Period.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		BC2EBCC02973C0FC0011F132 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BC2EBCC22973C0FF0011F132 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC2EBCC52973C0FF0011F132 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BC2EBCCC2973C56A0011F132 /* UserInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInput.swift; sourceTree = "<group>"; };
+		BC2EBCCE2973C9040011F132 /* Visualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visualizer.swift; sourceTree = "<group>"; };
+		BC2EBCD02973CAAB0011F132 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		BC2EBCD22974DE360011F132 /* Period.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				BC2EBCBE2973C0FC0011F132 /* DeadlineApp.swift */,
-				BC2EBCC02973C0FC0011F132 /* ContentView.swift */,
+				BC2EBCD42974DE510011F132 /* Views */,
+				BC2EBCD52974DE570011F132 /* Model */,
 				BC2EBCC22973C0FF0011F132 /* Assets.xcassets */,
 				BC2EBCC42973C0FF0011F132 /* Preview Content */,
 			);
@@ -65,6 +74,41 @@
 				BC2EBCC52973C0FF0011F132 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BC2EBCD42974DE510011F132 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BC2EBCC02973C0FC0011F132 /* ContentView.swift */,
+				BC2EBCD72974DE960011F132 /* User */,
+				BC2EBCD62974DE710011F132 /* Visualization */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC2EBCD52974DE570011F132 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC2EBCD02973CAAB0011F132 /* UserData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC2EBCD62974DE710011F132 /* Visualization */ = {
+			isa = PBXGroup;
+			children = (
+				BC2EBCCE2973C9040011F132 /* Visualizer.swift */,
+				BC2EBCD22974DE360011F132 /* Period.swift */,
+			);
+			path = Visualization;
+			sourceTree = "<group>";
+		};
+		BC2EBCD72974DE960011F132 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				BC2EBCCC2973C56A0011F132 /* UserInput.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +182,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC2EBCC12973C0FC0011F132 /* ContentView.swift in Sources */,
+				BC2EBCD32974DE360011F132 /* Period.swift in Sources */,
+				BC2EBCCF2973C9040011F132 /* Visualizer.swift in Sources */,
+				BC2EBCD12973CAAB0011F132 /* UserData.swift in Sources */,
+				BC2EBCCD2973C56A0011F132 /* UserInput.swift in Sources */,
 				BC2EBCBF2973C0FC0011F132 /* DeadlineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
