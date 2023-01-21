@@ -30,6 +30,7 @@ struct UserInput: View {
                     .textFieldStyle(.roundedBorder)
                     .frame(width: 50)
             }
+            Spacer()
         }
             .padding()
     }
