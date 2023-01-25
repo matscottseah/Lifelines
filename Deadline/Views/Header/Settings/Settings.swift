@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct UserInput: View {
+struct Settings: View {
     @EnvironmentObject var userData: UserData
     
     var body: some View {
@@ -18,8 +18,10 @@ struct UserInput: View {
                 displayedComponents: [.date]
             )
                 .datePickerStyle(.compact)
+            
             HStack {
                 Text("Life Expectancy")
+                
                 Spacer()
                 
                 TextField(
@@ -30,15 +32,16 @@ struct UserInput: View {
                     .textFieldStyle(.roundedBorder)
                     .frame(width: 50)
             }
+            
             Spacer()
         }
             .padding()
     }
 }
 
-struct UserInput_Previews: PreviewProvider {    
+struct Settings_Previews: PreviewProvider {
     static var previews: some View {
-        UserInput()
+        Settings()
             .environmentObject(UserData())
     }
 }

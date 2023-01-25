@@ -2,56 +2,69 @@
 //  UserData.swift
 //  Deadline
 //
-//  Created by Matthew Seah on 1/14/23.
+//  Created by Matthew Seah on 1/21/23.
 //
 
 import Foundation
-import SwiftUI
 
 final class UserData: ObservableObject {
+    @Published var firstName: String = ""
+    @Published var lastName: String = ""
     @Published var birthDate: Date = Date(timeIntervalSince1970: 860396400)
     @Published var lifeExpectancy: String = "90"
+    
     var today = Date()
+    
+    var deathDate: Date {
+        var dateComponents = DateComponents()
+        dateComponents.year = Int(lifeExpectancy)
+        let date = Calendar.current.date(byAdding: dateComponents, to: birthDate)!
+        
+        return Calendar.current.startOfDay(for: date)
+    }
     
     var totalDaysAlive: Int {
         let startOfBirthDate = Calendar.current.startOfDay(for: birthDate)
-        let startOfDeadthDate = Calendar.current.startOfDay(for: deathDate)
         
-        let diffComponents = Calendar.current.dateComponents([.day], from: startOfBirthDate, to: startOfDeadthDate)
-        return diffComponents.day!
-    }
-    
-    var deathDate: Date {
-        var dateComponent = DateComponents()
-        dateComponent.year = Int(lifeExpectancy)
-        return Calendar.current.date(byAdding: dateComponent, to: birthDate)!
+        let dateComponents = Calendar.current.dateComponents([.day], from: startOfBirthDate, to: deathDate)
+        return dateComponents.day!
     }
     
     var daysSinceBirth: Int {
         let startOfBirthDate = Calendar.current.startOfDay(for: birthDate)
-        let startOfToday = Calendar.current.startOfDay(for: today)
         
-        let diffComponents = Calendar.current.dateComponents([.day], from: startOfBirthDate, to: startOfToday)
-        return diffComponents.day!
+        let dateComponents = Calendar.current.dateComponents([.day], from: startOfBirthDate, to: today)
+        return dateComponents.day!
     }
     
     var daysTillDeath: Int {
-        let startOfToday = Calendar.current.startOfDay(for: today)
         let startOfdeathDate = Calendar.current.startOfDay(for: deathDate)
         
-        let diffComponents = Calendar.current.dateComponents([.day], from: startOfToday, to: startOfdeathDate)
-        return diffComponents.day!
+        let dateComponents = Calendar.current.dateComponents([.day], from: today, to: startOfdeathDate)
+        return dateComponents.day!
     }
     
-    var wholeTotalWeeksAlive: Int {
-        return Int(totalDaysAlive / 7)
+    var totalWeeksAlive: Int {
+        let dateComponents = Calendar.current.dateComponents([.weekOfYear], from: birthDate, to: deathDate)
+        
+        return totalDaysAlive % 7 > 0
+            ? dateComponents.weekOfYear! + 1
+            : dateComponents.weekOfYear!
     }
     
     var wholeWeeksSinceBirth: Int {
-        return Int(daysSinceBirth / 7)
+        let dateComponents = Calendar.current.dateComponents([.weekOfYear], from: birthDate, to: today)
+        
+        return dateComponents.weekOfYear!
     }
     
     var wholeWeeksTillDeath: Int {
-        return Int(daysTillDeath / 7)
+        let dateComponents = Calendar.current.dateComponents([.weekOfYear], from: today, to: deathDate)
+        
+        return dateComponents.weekOfYear!
+    }
+    
+    var weeksOfLife: [WeekOfLife] {
+        return (1...totalWeeksAlive).map { WeekOfLife(weekNumber: $0, isCompleted: $0 <= wholeWeeksSinceBirth) }
     }
 }

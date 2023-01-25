@@ -7,26 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC1DCB1A2980B7F400A4EBF5 /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB192980B7F300A4EBF5 /* SettingsButton.swift */; };
+		BC1DCB1E2980BCE000A4EBF5 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB1D2980BCE000A4EBF5 /* Header.swift */; };
+		BC1DCB212980EF9A00A4EBF5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB202980EF9A00A4EBF5 /* Card.swift */; };
 		BC2EBCBF2973C0FC0011F132 /* DeadlineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCBE2973C0FC0011F132 /* DeadlineApp.swift */; };
 		BC2EBCC12973C0FC0011F132 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCC02973C0FC0011F132 /* ContentView.swift */; };
 		BC2EBCC32973C0FF0011F132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2EBCC22973C0FF0011F132 /* Assets.xcassets */; };
 		BC2EBCC62973C0FF0011F132 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2EBCC52973C0FF0011F132 /* Preview Assets.xcassets */; };
-		BC2EBCCD2973C56A0011F132 /* UserInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCCC2973C56A0011F132 /* UserInput.swift */; };
-		BC2EBCCF2973C9040011F132 /* Visualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCCE2973C9040011F132 /* Visualizer.swift */; };
-		BC2EBCD12973CAAB0011F132 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCD02973CAAB0011F132 /* UserData.swift */; };
-		BC2EBCD32974DE360011F132 /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCD22974DE360011F132 /* Period.swift */; };
+		BC2EBCCD2973C56A0011F132 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCCC2973C56A0011F132 /* Settings.swift */; };
+		BC2EBCCF2973C9040011F132 /* LifeGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCCE2973C9040011F132 /* LifeGrid.swift */; };
+		BC2EBCD32974DE360011F132 /* LifeGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCD22974DE360011F132 /* LifeGridItem.swift */; };
+		BC986B42297C99CB00E0D68C /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC986B41297C99CB00E0D68C /* UserData.swift */; };
+		BC986B47297CD8FA00E0D68C /* Overview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC986B46297CD8FA00E0D68C /* Overview.swift */; };
+		BC986B49297DA1F300E0D68C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC986B48297DA1F300E0D68C /* Extensions.swift */; };
+		BC986B4B297DC72900E0D68C /* WeekOfLife.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC986B4A297DC72900E0D68C /* WeekOfLife.swift */; };
+		BCF180BF297F8FDE006305F6 /* ProgressBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF180BE297F8FDE006305F6 /* ProgressBars.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC1DCB192980B7F300A4EBF5 /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
+		BC1DCB1D2980BCE000A4EBF5 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		BC1DCB202980EF9A00A4EBF5 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		BC2EBCBB2973C0FC0011F132 /* Deadline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deadline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2EBCBE2973C0FC0011F132 /* DeadlineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineApp.swift; sourceTree = "<group>"; };
 		BC2EBCC02973C0FC0011F132 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BC2EBCC22973C0FF0011F132 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC2EBCC52973C0FF0011F132 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BC2EBCCC2973C56A0011F132 /* UserInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInput.swift; sourceTree = "<group>"; };
-		BC2EBCCE2973C9040011F132 /* Visualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visualizer.swift; sourceTree = "<group>"; };
-		BC2EBCD02973CAAB0011F132 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
-		BC2EBCD22974DE360011F132 /* Period.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
+		BC2EBCCC2973C56A0011F132 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		BC2EBCCE2973C9040011F132 /* LifeGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGrid.swift; sourceTree = "<group>"; };
+		BC2EBCD22974DE360011F132 /* LifeGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGridItem.swift; sourceTree = "<group>"; };
+		BC986B41297C99CB00E0D68C /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		BC986B46297CD8FA00E0D68C /* Overview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overview.swift; sourceTree = "<group>"; };
+		BC986B48297DA1F300E0D68C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BC986B4A297DC72900E0D68C /* WeekOfLife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekOfLife.swift; sourceTree = "<group>"; };
+		BCF180BE297F8FDE006305F6 /* ProgressBars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBars.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC1DCB1F2980BD3E00A4EBF5 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				BC2EBCCC2973C56A0011F132 /* Settings.swift */,
+				BC1DCB192980B7F300A4EBF5 /* SettingsButton.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		BC2EBCB22973C0FC0011F132 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +87,7 @@
 				BC2EBCD52974DE570011F132 /* Model */,
 				BC2EBCC22973C0FF0011F132 /* Assets.xcassets */,
 				BC2EBCC42973C0FF0011F132 /* Preview Content */,
+				BC986B48297DA1F300E0D68C /* Extensions.swift */,
 			);
 			path = Deadline;
 			sourceTree = "<group>";
@@ -80,8 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				BC2EBCC02973C0FC0011F132 /* ContentView.swift */,
-				BC2EBCD72974DE960011F132 /* User */,
-				BC2EBCD62974DE710011F132 /* Visualization */,
+				BC986B45297CD8E700E0D68C /* Overview */,
+				BC2EBCD72974DE960011F132 /* Header */,
+				BC2EBCD62974DE710011F132 /* LifeGrid */,
+				BCF180BD297F8FC3006305F6 /* ProgressBar */,
+				BC1DCB202980EF9A00A4EBF5 /* Card.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -89,26 +116,44 @@
 		BC2EBCD52974DE570011F132 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BC2EBCD02973CAAB0011F132 /* UserData.swift */,
+				BC986B41297C99CB00E0D68C /* UserData.swift */,
+				BC986B4A297DC72900E0D68C /* WeekOfLife.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		BC2EBCD62974DE710011F132 /* Visualization */ = {
+		BC2EBCD62974DE710011F132 /* LifeGrid */ = {
 			isa = PBXGroup;
 			children = (
-				BC2EBCCE2973C9040011F132 /* Visualizer.swift */,
-				BC2EBCD22974DE360011F132 /* Period.swift */,
+				BC2EBCCE2973C9040011F132 /* LifeGrid.swift */,
+				BC2EBCD22974DE360011F132 /* LifeGridItem.swift */,
 			);
-			path = Visualization;
+			path = LifeGrid;
 			sourceTree = "<group>";
 		};
-		BC2EBCD72974DE960011F132 /* User */ = {
+		BC2EBCD72974DE960011F132 /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				BC2EBCCC2973C56A0011F132 /* UserInput.swift */,
+				BC1DCB1D2980BCE000A4EBF5 /* Header.swift */,
+				BC1DCB1F2980BD3E00A4EBF5 /* Settings */,
 			);
-			path = User;
+			path = Header;
+			sourceTree = "<group>";
+		};
+		BC986B45297CD8E700E0D68C /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				BC986B46297CD8FA00E0D68C /* Overview.swift */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
+		BCF180BD297F8FC3006305F6 /* ProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				BCF180BE297F8FDE006305F6 /* ProgressBars.swift */,
+			);
+			path = ProgressBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,11 +226,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC986B4B297DC72900E0D68C /* WeekOfLife.swift in Sources */,
+				BCF180BF297F8FDE006305F6 /* ProgressBars.swift in Sources */,
 				BC2EBCC12973C0FC0011F132 /* ContentView.swift in Sources */,
-				BC2EBCD32974DE360011F132 /* Period.swift in Sources */,
-				BC2EBCCF2973C9040011F132 /* Visualizer.swift in Sources */,
-				BC2EBCD12973CAAB0011F132 /* UserData.swift in Sources */,
-				BC2EBCCD2973C56A0011F132 /* UserInput.swift in Sources */,
+				BC2EBCD32974DE360011F132 /* LifeGridItem.swift in Sources */,
+				BC1DCB212980EF9A00A4EBF5 /* Card.swift in Sources */,
+				BC1DCB1E2980BCE000A4EBF5 /* Header.swift in Sources */,
+				BC1DCB1A2980B7F400A4EBF5 /* SettingsButton.swift in Sources */,
+				BC986B47297CD8FA00E0D68C /* Overview.swift in Sources */,
+				BC986B42297C99CB00E0D68C /* UserData.swift in Sources */,
+				BC986B49297DA1F300E0D68C /* Extensions.swift in Sources */,
+				BC2EBCCF2973C9040011F132 /* LifeGrid.swift in Sources */,
+				BC2EBCCD2973C56A0011F132 /* Settings.swift in Sources */,
 				BC2EBCBF2973C0FC0011F132 /* DeadlineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
