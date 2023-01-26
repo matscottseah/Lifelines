@@ -10,6 +10,7 @@
 		BC1DCB1A2980B7F400A4EBF5 /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB192980B7F300A4EBF5 /* SettingsButton.swift */; };
 		BC1DCB1E2980BCE000A4EBF5 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB1D2980BCE000A4EBF5 /* Header.swift */; };
 		BC1DCB212980EF9A00A4EBF5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB202980EF9A00A4EBF5 /* Card.swift */; };
+		BC1DCB232982408600A4EBF5 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB222982408600A4EBF5 /* DateManager.swift */; };
 		BC2EBCBF2973C0FC0011F132 /* DeadlineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCBE2973C0FC0011F132 /* DeadlineApp.swift */; };
 		BC2EBCC12973C0FC0011F132 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCC02973C0FC0011F132 /* ContentView.swift */; };
 		BC2EBCC32973C0FF0011F132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2EBCC22973C0FF0011F132 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		BC1DCB192980B7F300A4EBF5 /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
 		BC1DCB1D2980BCE000A4EBF5 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		BC1DCB202980EF9A00A4EBF5 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		BC1DCB222982408600A4EBF5 /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		BC2EBCBB2973C0FC0011F132 /* Deadline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deadline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2EBCBE2973C0FC0011F132 /* DeadlineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineApp.swift; sourceTree = "<group>"; };
 		BC2EBCC02973C0FC0011F132 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				BC986B41297C99CB00E0D68C /* UserData.swift */,
 				BC986B4A297DC72900E0D68C /* WeekOfLife.swift */,
+				BC1DCB222982408600A4EBF5 /* DateManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				BC1DCB212980EF9A00A4EBF5 /* Card.swift in Sources */,
 				BC1DCB1E2980BCE000A4EBF5 /* Header.swift in Sources */,
 				BC1DCB1A2980B7F400A4EBF5 /* SettingsButton.swift in Sources */,
+				BC1DCB232982408600A4EBF5 /* DateManager.swift in Sources */,
 				BC986B47297CD8FA00E0D68C /* Overview.swift in Sources */,
 				BC986B42297C99CB00E0D68C /* UserData.swift in Sources */,
 				BC986B49297DA1F300E0D68C /* Extensions.swift in Sources */,

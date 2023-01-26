@@ -9,39 +9,47 @@ import SwiftUI
 
 struct ProgressBars: View {
     @EnvironmentObject var userData: UserData
+    var dateManager = DateManager()
     
-    var lifeStats: (Float, Float, Float) {
-        return (Float((userData.daysSinceBirth/userData.totalDaysAlive) * 100), Float(userData.daysSinceBirth), Float(userData.totalDaysAlive))
+    var lifeBarColor: Color {
+        if userData.percentOfLifeComplete <= 33 { return .green }
+        else if userData.percentOfLifeComplete > 33 && userData.percentOfLifeComplete <= 66 { return .orange }
+        else { return .red }
     }
-
+    
     var body: some View {
         VStack {
             HStack {
-                Text("Life: \(20)%")
+                Text("Life: \(userData.percentOfLifeComplete)%")
                     .frame(width: 100, alignment: .leading)
-                ProgressView(value: lifeStats.1, total: lifeStats.2)
-                    .tint(.black)
+                ProgressView(value: Float(userData.daysSinceBirth), total: Float(userData.totalDaysAlive))
+                    .tint(colorForPercentage(percentage: userData.percentOfLifeComplete))
             }
             HStack {
-                Text("Year: \(10)%")
+                Text("Year: \(dateManager.percentOfYearComplete)%")
                     .frame(width: 100, alignment: .leading)
-                ProgressView(value: 10, total: 100)
-                    .tint(.black)
+                ProgressView(value: Float(dateManager.dayOfYear), total: 365)
+                    .tint(colorForPercentage(percentage: dateManager.percentOfYearComplete))
             }
             HStack {
-                Text("Month: \(90)%")
+                Text("Month: \(dateManager.percentOfMonthComplete)%")
                     .frame(width: 100, alignment: .leading)
-                ProgressView(value: 90, total: 100)
-                    .tint(.black)
+                ProgressView(value: Float(dateManager.dayOfMonth), total: Float(dateManager.daysInMonth))
+                    .tint(colorForPercentage(percentage: dateManager.percentOfMonthComplete))
             }
             HStack {
-                Text("Week: \(50)%")
+                Text("Week: \(dateManager.percentOfWeekComplete)%")
                     .frame(width: 100, alignment: .leading)
-                ProgressView(value: 50, total: 100)
-                    .tint(.black)
+                ProgressView(value: Float(dateManager.dayOfWeek), total: 7)
+                    .tint(colorForPercentage(percentage: dateManager.percentOfWeekComplete))
             }
         }
-        
+    }
+    
+    func colorForPercentage(percentage: Int) -> Color {
+        if percentage <= 33 { return .green }
+        else if percentage > 33 && percentage <= 66 { return .orange }
+        else { return .red }
     }
 }
 

@@ -67,4 +67,8 @@ final class UserData: ObservableObject {
     var weeksOfLife: [WeekOfLife] {
         return (1...totalWeeksAlive).map { WeekOfLife(weekNumber: $0, isCompleted: $0 <= wholeWeeksSinceBirth) }
     }
+    
+    var percentOfLifeComplete: Int {
+        return Int((Float(daysSinceBirth)/Float(totalDaysAlive) * 100))
+    }
 }

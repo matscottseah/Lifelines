@@ -27,12 +27,12 @@ struct Overview: View {
                         .buttonStyle(PlainButtonStyle())
                         .padding(.bottom)
 
-                        NavigationLink(destination: LifeGrid()) {
-                            VStack(alignment: .leading) {
-                                Card(title: "\(userData.wholeWeeksTillDeath) Weeks left to live", content: AnyView(LifeGrid()), width: UIScreen.screenWidth-40)
-                            }
-                        }
-                        .buttonStyle(PlainButtonStyle())
+//                        NavigationLink(destination: LifeGrid()) {
+//                            VStack(alignment: .leading) {
+//                                Card(title: "\(userData.wholeWeeksTillDeath) Weeks left to live", content: AnyView(LifeGrid()), width: UIScreen.screenWidth-40)
+//                            }
+//                        }
+//                        .buttonStyle(PlainButtonStyle())
                     }
                     Spacer()
                 }
