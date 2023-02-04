@@ -1,0 +1,37 @@
+[
+    {
+        "id": "50b54c30-ecb3-4a20-8add-2926ba276dbf",
+        "startDate": 1672560000,
+        "endDate": 1680246000,
+        "title": "Ship Lifelines App",
+        "isFavorite": true,
+    },
+    {
+        "id": "aae3d981-9cb1-4bf1-a21f-6427a9574c6d",
+        "startDate": 1672560000,
+        "endDate": 1704096000,
+        "title": "New Year - 2024",
+        "isFavorite": false,
+    },
+    {
+        "id": "da93c1a9-6850-422e-9498-1fe553c1c172",
+        "startDate": 1649314800,
+        "endDate": 1680850800,
+        "title": "Birthday - 26",
+        "isFavorite": true,
+    },
+    {
+        "id": "1527a65d-0fde-4a7d-a83a-527ca7240c37",
+        "startDate": 1653807600,
+        "endDate": 1685343600,
+        "title": "Cristina's Birthday",
+        "isFavorite": true,
+    },
+    {
+        "id": "1abc1e40-75e0-489f-8864-65250319aaa5",
+        "startDate": 1667199600,
+        "endDate": 1698735600,
+        "title": "Cat's Birthday",
+        "isFavorite": false,
+    }
+]

@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct LifeGrid: View {
-    @EnvironmentObject var userData: UserData
+    @EnvironmentObject var modelData: ModelData
     
     var lifeGridItems: [LifeGridItem] {
-        return userData.weeksOfLife.map { LifeGridItem(id: $0.weekNumber, color: $0.isCompleted ? Color("CompletedWeekColor") : Color("UncompletedWeekColor"), size: 5) }
+        return modelData.user.weeksOfLife.map { LifeGridItem(id: $0.weekNumber, color: $0.isCompleted ? Color("CompletedWeekColor") : Color("UncompletedWeekColor"), size: 5) }
     }
     
     let columns = Array(repeating: GridItem(.flexible(minimum: 0, maximum: 7), spacing: 2), count: 52)
@@ -30,7 +30,7 @@ struct LifeGrid: View {
 struct LifeGrid_Previews: PreviewProvider {
     static var previews: some View {
         LifeGrid()
-            .environmentObject(UserData())
+            .environmentObject(ModelData())
             .padding()
     }
 }

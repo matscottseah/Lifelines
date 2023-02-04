@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct DeadlineApp: App {
-    @StateObject private var userData = UserData()
+    @StateObject private var modelData = ModelData()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(userData)
+                .environmentObject(modelData)
         }
     }
 }

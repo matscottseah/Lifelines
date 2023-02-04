@@ -8,19 +8,31 @@
 import SwiftUI
 
 struct Header: View {
+    var title: String
+    @State private var showSettings: Bool = false
+    
     var body: some View {
         HStack {
-            Text("Lifelines")
+            Text(title)
                 .font(.largeTitle)
                 .bold()
+            
             Spacer()
-            SettingsButton()
+            
+            Button(action: { showSettings.toggle() } ) {
+                Image(systemName: "person.fill")
+                    .font(.system(size: 25))
+                    .foregroundColor(.black)
+            }
+            .sheet(isPresented: $showSettings) {
+                Settings()
+            }
         }
     }
 }
 
 struct Header_Previews: PreviewProvider {
     static var previews: some View {
-        Header()
+        Header(title: "Lifelines")
     }
 }

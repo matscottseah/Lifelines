@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var userData: UserData
+    @EnvironmentObject var modelData: ModelData
     
     var body: some View {
         ZStack {
             Color("BackgroundColor").ignoresSafeArea()
                 TabView {
-                    Overview()
+                    Summary()
                         .tabItem {
-                            Label("Overview", systemImage: "square.grid.4x3.fill")
+                            Label("Summary", systemImage: "line.3.horizontal")
+                        }
+                    MilestoneList()
+                        .tabItem {
+                            Label("Milestones", systemImage: "star.fill")
                         }
                 }
         }
@@ -27,7 +31,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentView()
-                .environmentObject(UserData())
+                .environmentObject(ModelData())
         }
     }
 }

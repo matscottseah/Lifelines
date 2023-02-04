@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct Settings: View {
-    @EnvironmentObject var userData: UserData
+    @EnvironmentObject var modelData: ModelData
     
     var body: some View {
         VStack {
             DatePicker(
                 "Birth Date",
-                selection: $userData.birthDate,
+                selection: $modelData.user.birthDate,
                 displayedComponents: [.date]
             )
                 .datePickerStyle(.compact)
@@ -26,7 +26,7 @@ struct Settings: View {
                 
                 TextField(
                     "Age",
-                    text: $userData.lifeExpectancy
+                    text: $modelData.user.lifeExpectancy
                 )
                     .keyboardType(.numberPad)
                     .textFieldStyle(.roundedBorder)
@@ -42,6 +42,6 @@ struct Settings: View {
 struct Settings_Previews: PreviewProvider {
     static var previews: some View {
         Settings()
-            .environmentObject(UserData())
+            .environmentObject(ModelData())
     }
 }

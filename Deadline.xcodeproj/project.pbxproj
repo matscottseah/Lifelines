@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC1DCB1A2980B7F400A4EBF5 /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB192980B7F300A4EBF5 /* SettingsButton.swift */; };
+		BC1C4341298C6AF50066212B /* NewMilestoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1C4340298C6AF50066212B /* NewMilestoneButton.swift */; };
+		BC1C4343298E0DFF0066212B /* MilestoneFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1C4342298E0DFF0066212B /* MilestoneFavorites.swift */; };
 		BC1DCB1E2980BCE000A4EBF5 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB1D2980BCE000A4EBF5 /* Header.swift */; };
 		BC1DCB212980EF9A00A4EBF5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB202980EF9A00A4EBF5 /* Card.swift */; };
 		BC1DCB232982408600A4EBF5 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB222982408600A4EBF5 /* DateManager.swift */; };
+		BC1DCB2729837B9F00A4EBF5 /* MilestoneList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB2629837B9F00A4EBF5 /* MilestoneList.swift */; };
+		BC1DCB2D29837C7B00A4EBF5 /* Milestone.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB2C29837C7B00A4EBF5 /* Milestone.swift */; };
+		BC1DCB2F2986351700A4EBF5 /* MilestoneDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB2E2986351700A4EBF5 /* MilestoneDetails.swift */; };
+		BC1DCB312986364500A4EBF5 /* MilestoneItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB302986364500A4EBF5 /* MilestoneItem.swift */; };
+		BC1DCB362987271C00A4EBF5 /* userData.json in Resources */ = {isa = PBXBuildFile; fileRef = BC1DCB352987271C00A4EBF5 /* userData.json */; };
+		BC1DCB38298728A400A4EBF5 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB37298728A400A4EBF5 /* ModelData.swift */; };
+		BC1DCB3A2987450E00A4EBF5 /* milestoneData.json in Resources */ = {isa = PBXBuildFile; fileRef = BC1DCB392987450E00A4EBF5 /* milestoneData.json */; };
 		BC2EBCBF2973C0FC0011F132 /* DeadlineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCBE2973C0FC0011F132 /* DeadlineApp.swift */; };
 		BC2EBCC12973C0FC0011F132 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCC02973C0FC0011F132 /* ContentView.swift */; };
 		BC2EBCC32973C0FF0011F132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2EBCC22973C0FF0011F132 /* Assets.xcassets */; };
@@ -18,18 +26,25 @@
 		BC2EBCCD2973C56A0011F132 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCCC2973C56A0011F132 /* Settings.swift */; };
 		BC2EBCCF2973C9040011F132 /* LifeGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCCE2973C9040011F132 /* LifeGrid.swift */; };
 		BC2EBCD32974DE360011F132 /* LifeGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCD22974DE360011F132 /* LifeGridItem.swift */; };
-		BC986B42297C99CB00E0D68C /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC986B41297C99CB00E0D68C /* UserData.swift */; };
-		BC986B47297CD8FA00E0D68C /* Overview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC986B46297CD8FA00E0D68C /* Overview.swift */; };
+		BC986B42297C99CB00E0D68C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC986B41297C99CB00E0D68C /* User.swift */; };
+		BC986B47297CD8FA00E0D68C /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC986B46297CD8FA00E0D68C /* Summary.swift */; };
 		BC986B49297DA1F300E0D68C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC986B48297DA1F300E0D68C /* Extensions.swift */; };
-		BC986B4B297DC72900E0D68C /* WeekOfLife.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC986B4A297DC72900E0D68C /* WeekOfLife.swift */; };
-		BCF180BF297F8FDE006305F6 /* ProgressBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF180BE297F8FDE006305F6 /* ProgressBars.swift */; };
+		BCF180BF297F8FDE006305F6 /* LifeProgressBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF180BE297F8FDE006305F6 /* LifeProgressBars.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BC1DCB192980B7F300A4EBF5 /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
+		BC1C4340298C6AF50066212B /* NewMilestoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMilestoneButton.swift; sourceTree = "<group>"; };
+		BC1C4342298E0DFF0066212B /* MilestoneFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestoneFavorites.swift; sourceTree = "<group>"; };
 		BC1DCB1D2980BCE000A4EBF5 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		BC1DCB202980EF9A00A4EBF5 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		BC1DCB222982408600A4EBF5 /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
+		BC1DCB2629837B9F00A4EBF5 /* MilestoneList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestoneList.swift; sourceTree = "<group>"; };
+		BC1DCB2C29837C7B00A4EBF5 /* Milestone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milestone.swift; sourceTree = "<group>"; };
+		BC1DCB2E2986351700A4EBF5 /* MilestoneDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestoneDetails.swift; sourceTree = "<group>"; };
+		BC1DCB302986364500A4EBF5 /* MilestoneItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestoneItem.swift; sourceTree = "<group>"; };
+		BC1DCB352987271C00A4EBF5 /* userData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = userData.json; sourceTree = "<group>"; };
+		BC1DCB37298728A400A4EBF5 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		BC1DCB392987450E00A4EBF5 /* milestoneData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = milestoneData.json; sourceTree = "<group>"; };
 		BC2EBCBB2973C0FC0011F132 /* Deadline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deadline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2EBCBE2973C0FC0011F132 /* DeadlineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineApp.swift; sourceTree = "<group>"; };
 		BC2EBCC02973C0FC0011F132 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,11 +53,10 @@
 		BC2EBCCC2973C56A0011F132 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		BC2EBCCE2973C9040011F132 /* LifeGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGrid.swift; sourceTree = "<group>"; };
 		BC2EBCD22974DE360011F132 /* LifeGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGridItem.swift; sourceTree = "<group>"; };
-		BC986B41297C99CB00E0D68C /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
-		BC986B46297CD8FA00E0D68C /* Overview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overview.swift; sourceTree = "<group>"; };
+		BC986B41297C99CB00E0D68C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BC986B46297CD8FA00E0D68C /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
 		BC986B48297DA1F300E0D68C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		BC986B4A297DC72900E0D68C /* WeekOfLife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekOfLife.swift; sourceTree = "<group>"; };
-		BCF180BE297F8FDE006305F6 /* ProgressBars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBars.swift; sourceTree = "<group>"; };
+		BCF180BE297F8FDE006305F6 /* LifeProgressBars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeProgressBars.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +74,45 @@
 			isa = PBXGroup;
 			children = (
 				BC2EBCCC2973C56A0011F132 /* Settings.swift */,
-				BC1DCB192980B7F300A4EBF5 /* SettingsButton.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		BC1DCB2829837BAC00A4EBF5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BC1DCB202980EF9A00A4EBF5 /* Card.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		BC1DCB2929837BBA00A4EBF5 /* Milestones */ = {
+			isa = PBXGroup;
+			children = (
+				BC1DCB2629837B9F00A4EBF5 /* MilestoneList.swift */,
+				BC1DCB2E2986351700A4EBF5 /* MilestoneDetails.swift */,
+				BC1DCB302986364500A4EBF5 /* MilestoneItem.swift */,
+				BC1C4340298C6AF50066212B /* NewMilestoneButton.swift */,
+			);
+			path = Milestones;
+			sourceTree = "<group>";
+		};
+		BC1DCB322987266900A4EBF5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BC986B48297DA1F300E0D68C /* Extensions.swift */,
+				BC1DCB222982408600A4EBF5 /* DateManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BC1DCB332987268900A4EBF5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC1DCB352987271C00A4EBF5 /* userData.json */,
+				BC1DCB392987450E00A4EBF5 /* milestoneData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		BC2EBCB22973C0FC0011F132 = {
@@ -86,10 +136,11 @@
 			children = (
 				BC2EBCBE2973C0FC0011F132 /* DeadlineApp.swift */,
 				BC2EBCD42974DE510011F132 /* Views */,
-				BC2EBCD52974DE570011F132 /* Model */,
-				BC2EBCC22973C0FF0011F132 /* Assets.xcassets */,
 				BC2EBCC42973C0FF0011F132 /* Preview Content */,
-				BC986B48297DA1F300E0D68C /* Extensions.swift */,
+				BC1DCB322987266900A4EBF5 /* Helpers */,
+				BC2EBCD52974DE570011F132 /* Model */,
+				BC1DCB332987268900A4EBF5 /* Resources */,
+				BC2EBCC22973C0FF0011F132 /* Assets.xcassets */,
 			);
 			path = Deadline;
 			sourceTree = "<group>";
@@ -107,10 +158,10 @@
 			children = (
 				BC2EBCC02973C0FC0011F132 /* ContentView.swift */,
 				BC986B45297CD8E700E0D68C /* Overview */,
+				BC1DCB2929837BBA00A4EBF5 /* Milestones */,
 				BC2EBCD72974DE960011F132 /* Header */,
 				BC2EBCD62974DE710011F132 /* LifeGrid */,
-				BCF180BD297F8FC3006305F6 /* ProgressBar */,
-				BC1DCB202980EF9A00A4EBF5 /* Card.swift */,
+				BC1DCB2829837BAC00A4EBF5 /* Helper */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -118,9 +169,9 @@
 		BC2EBCD52974DE570011F132 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BC986B41297C99CB00E0D68C /* UserData.swift */,
-				BC986B4A297DC72900E0D68C /* WeekOfLife.swift */,
-				BC1DCB222982408600A4EBF5 /* DateManager.swift */,
+				BC1DCB37298728A400A4EBF5 /* ModelData.swift */,
+				BC986B41297C99CB00E0D68C /* User.swift */,
+				BC1DCB2C29837C7B00A4EBF5 /* Milestone.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -146,17 +197,11 @@
 		BC986B45297CD8E700E0D68C /* Overview */ = {
 			isa = PBXGroup;
 			children = (
-				BC986B46297CD8FA00E0D68C /* Overview.swift */,
+				BC986B46297CD8FA00E0D68C /* Summary.swift */,
+				BCF180BE297F8FDE006305F6 /* LifeProgressBars.swift */,
+				BC1C4342298E0DFF0066212B /* MilestoneFavorites.swift */,
 			);
 			path = Overview;
-			sourceTree = "<group>";
-		};
-		BCF180BD297F8FC3006305F6 /* ProgressBar */ = {
-			isa = PBXGroup;
-			children = (
-				BCF180BE297F8FDE006305F6 /* ProgressBars.swift */,
-			);
-			path = ProgressBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,7 +262,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1DCB362987271C00A4EBF5 /* userData.json in Resources */,
 				BC2EBCC62973C0FF0011F132 /* Preview Assets.xcassets in Resources */,
+				BC1DCB3A2987450E00A4EBF5 /* milestoneData.json in Resources */,
 				BC2EBCC32973C0FF0011F132 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,18 +276,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC986B4B297DC72900E0D68C /* WeekOfLife.swift in Sources */,
-				BCF180BF297F8FDE006305F6 /* ProgressBars.swift in Sources */,
+				BCF180BF297F8FDE006305F6 /* LifeProgressBars.swift in Sources */,
+				BC1C4341298C6AF50066212B /* NewMilestoneButton.swift in Sources */,
 				BC2EBCC12973C0FC0011F132 /* ContentView.swift in Sources */,
 				BC2EBCD32974DE360011F132 /* LifeGridItem.swift in Sources */,
 				BC1DCB212980EF9A00A4EBF5 /* Card.swift in Sources */,
+				BC1DCB2F2986351700A4EBF5 /* MilestoneDetails.swift in Sources */,
 				BC1DCB1E2980BCE000A4EBF5 /* Header.swift in Sources */,
-				BC1DCB1A2980B7F400A4EBF5 /* SettingsButton.swift in Sources */,
+				BC1DCB2729837B9F00A4EBF5 /* MilestoneList.swift in Sources */,
 				BC1DCB232982408600A4EBF5 /* DateManager.swift in Sources */,
-				BC986B47297CD8FA00E0D68C /* Overview.swift in Sources */,
-				BC986B42297C99CB00E0D68C /* UserData.swift in Sources */,
+				BC986B47297CD8FA00E0D68C /* Summary.swift in Sources */,
+				BC1DCB312986364500A4EBF5 /* MilestoneItem.swift in Sources */,
+				BC1DCB38298728A400A4EBF5 /* ModelData.swift in Sources */,
+				BC986B42297C99CB00E0D68C /* User.swift in Sources */,
 				BC986B49297DA1F300E0D68C /* Extensions.swift in Sources */,
+				BC1DCB2D29837C7B00A4EBF5 /* Milestone.swift in Sources */,
 				BC2EBCCF2973C9040011F132 /* LifeGrid.swift in Sources */,
+				BC1C4343298E0DFF0066212B /* MilestoneFavorites.swift in Sources */,
 				BC2EBCCD2973C56A0011F132 /* Settings.swift in Sources */,
 				BC2EBCBF2973C0FC0011F132 /* DeadlineApp.swift in Sources */,
 			);

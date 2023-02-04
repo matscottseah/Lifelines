@@ -7,13 +7,25 @@
 
 import Foundation
 
-final class UserData: ObservableObject {
-    @Published var firstName: String = ""
-    @Published var lastName: String = ""
-    @Published var birthDate: Date = Date(timeIntervalSince1970: 860396400)
-    @Published var lifeExpectancy: String = "90"
+struct WeekOfLife {
+    var weekNumber: Int
+    var isCompleted: Bool
     
-    var today = Date()
+    init(weekNumber: Int, isCompleted: Bool) {
+        self.weekNumber = weekNumber
+        self.isCompleted = isCompleted
+    }
+}
+
+class User: Codable {
+    var firstName: String
+    var lastName: String
+    var birthDate: Date
+    var lifeExpectancy: String
+    
+    var today: Date {
+        return Date()
+    }
     
     var deathDate: Date {
         var dateComponents = DateComponents()
