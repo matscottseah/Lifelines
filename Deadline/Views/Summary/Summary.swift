@@ -20,29 +20,18 @@ struct Summary: View {
                         .padding()
                     
                     ScrollView {
-//                        HStack {
-//                            Text("Progress")
-//                                .font(.title3)
-//                                .bold()
-//
-//                            Spacer()
-//                        }
-//                        .padding(.horizontal)
+                        HStack {
+                            Text("**\(modelData.user.wholeWeeksTillDeath)** weeks left to live")
+                                .font(.title)
+                            Spacer()
+                        }
+                        .padding()
                         
                         NavigationLink(destination: LifeProgressBars()) {
                             Card(content: AnyView(LifeProgressBars()), width: .infinity)
                         }
                         .buttonStyle(PlainButtonStyle())
-                        .padding(.bottom).padding(.bottom)
-                        
-//                        HStack {
-//                            Text("Milestones")
-//                                .font(.title3)
-//                                .bold()
-//
-//                            Spacer()
-//                        }
-//                        .padding(.horizontal)
+                        .padding(.bottom)
                         
                         NavigationLink(destination: MilestoneList()) {
                             Card(content: AnyView(MilestoneFavorites()), width: .infinity)

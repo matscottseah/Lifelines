@@ -17,6 +17,9 @@ struct MilestoneFavorites: View {
     var body: some View {
         VStack {
             HStack {
+                Image(systemName: "star.fill")
+                    .font(.system(size: 15))
+                    .foregroundColor(.yellow)
                 Text("Milestones")
                     .font(.title3)
                     .bold()
@@ -24,7 +27,6 @@ struct MilestoneFavorites: View {
                 Image(systemName: "chevron.forward")
                     .font(.system(size: 15))
                     .foregroundColor(.gray)
-                .padding(.bottom)
             }
             .padding(.bottom)
             

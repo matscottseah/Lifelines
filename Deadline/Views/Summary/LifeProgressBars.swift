@@ -13,6 +13,9 @@ struct LifeProgressBars: View {
     var body: some View {
         VStack {
             HStack {
+                Image(systemName: "chevron.forward.2")
+                    .font(.system(size: 15))
+                    .foregroundColor(.blue)
                 Text("Progress")
                     .font(.title3)
                     .bold()
@@ -20,8 +23,8 @@ struct LifeProgressBars: View {
                 Image(systemName: "chevron.forward")
                     .font(.system(size: 15))
                     .foregroundColor(.gray)
-                .padding(.bottom)
             }
+            .padding(.bottom)
             
             HStack {
                 Text("Life: \(modelData.user.percentOfLifeComplete)%")

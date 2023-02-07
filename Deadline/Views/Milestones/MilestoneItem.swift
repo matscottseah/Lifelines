@@ -25,6 +25,7 @@ struct MilestoneItem: View {
         VStack {
             HStack {
                 Text(milestone.title)
+                    .bold()
                 Spacer()
                 if (showChevron) {
                     Image(systemName: "chevron.forward")

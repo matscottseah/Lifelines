@@ -24,7 +24,7 @@ struct MilestoneList: View {
                     
                     ScrollView {
                         ForEach(Array(modelData.milestones.enumerated()), id: \.offset) { index, element in
-                            NavigationLink(destination: MilestoneDetails(milestone: element)) {
+                            NavigationLink(destination: InspectMilestone(milestone: element)) {
                                 Card(content: AnyView(MilestoneItem(milestone: element)), width: .infinity)
                             }
                             .navigationTitle("Milestones")
