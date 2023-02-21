@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct InspectMilestone: View {
-    var milestone: Milestone
+    @EnvironmentObject var modelData: ModelData
+    var milestoneIndex: Int
+    var isInEditMode: Bool = false
+    
+    var milestone: Milestone { modelData.milestones[milestoneIndex] }
     
     var body: some View {
         ZStack {
             Color("BackgroundColor").ignoresSafeArea()
             ScrollView {
                 VStack {
-                    Card(content: AnyView(MilestoneItem(milestone: milestone)), width: .infinity)
-                    
+                    Card(content: AnyView(MilestoneItem(milestoneIndex: 0, showChevron: false)), width: .infinity)
+                    Card(content: AnyView(MilestoneDetails(milestoneIndex: milestoneIndex)), width: .infinity)
                 }
             }
         }
@@ -27,6 +31,6 @@ struct InspectMilestone: View {
 
 struct InspectMilestone_Previews: PreviewProvider {
     static var previews: some View {
-        InspectMilestone(milestone: Milestone(startDate: Date(timeIntervalSince1970: 1672560000), endDate: Date(timeIntervalSince1970: 1704009600), title: "Title", isFavorite: false))
+        InspectMilestone(milestoneIndex: 0)
     }
 }

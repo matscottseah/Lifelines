@@ -30,7 +30,21 @@ class Milestone: Codable, Identifiable {
         self.isFavorite = false
     }
     
-    var timeDurationString: String {
+    var totalTimeDurationString: String {
+        let formatter = DateComponentsFormatter()
+        formatter.zeroFormattingBehavior = .dropAll
+        formatter.allowedUnits = [.year, .month, .weekOfMonth, .day]
+        return formatter.string(from: startDate, to: endDate)!
+    }
+    
+    var pastTimeDurationString: String {
+        let formatter = DateComponentsFormatter()
+        formatter.zeroFormattingBehavior = .dropAll
+        formatter.allowedUnits = [.year, .month, .weekOfMonth, .day]
+        return formatter.string(from: startDate, to: Date())!
+    }
+    
+    var remainingTimeDurationString: String {
         let formatter = DateComponentsFormatter()
         formatter.zeroFormattingBehavior = .dropAll
         formatter.allowedUnits = [.year, .month, .weekOfMonth, .day]

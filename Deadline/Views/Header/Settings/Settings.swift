@@ -12,6 +12,12 @@ struct Settings: View {
     
     var body: some View {
         VStack {
+            HStack {
+                Text("User")
+                    .font(.title2)
+                Spacer()
+            }
+            
             DatePicker(
                 "Birth Date",
                 selection: $modelData.user.birthDate,
@@ -32,6 +38,8 @@ struct Settings: View {
                     .textFieldStyle(.roundedBorder)
                     .frame(width: 50)
             }
+            
+            Divider()
             
             Spacer()
         }

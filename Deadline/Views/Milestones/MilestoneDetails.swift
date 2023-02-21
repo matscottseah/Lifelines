@@ -8,27 +8,32 @@
 import SwiftUI
 
 struct MilestoneDetails: View {
-    var milestone: Milestone
+    @EnvironmentObject var modelData: ModelData
+    var milestoneIndex: Int
+    
+    var milestone: Milestone { modelData.milestones[milestoneIndex] }
     
     var body: some View {
         VStack {
             HStack {
-                Image(systemName: "sunrise.fill")
+                Image(systemName: "flag.fill")
                     .font(.system(size: 15))
                     .foregroundColor(Color("PrimaryTextColor"))
                 Text("Start")
                 Spacer()
                 Text("\(milestone.startDate.dateString())")
             }
+            .padding(.bottom)
             
             HStack {
-                Image(systemName: "sunset.fill")
+                Image(systemName: "flag.2.crossed.fill")
                     .font(.system(size: 15))
                     .foregroundColor(Color("PrimaryTextColor"))
                 Text("Finish")
                 Spacer()
                 Text("\(milestone.endDate.dateString())")
             }
+            .padding(.bottom)
             
             HStack {
                 Image(systemName: "hourglass")
@@ -36,8 +41,9 @@ struct MilestoneDetails: View {
                     .foregroundColor(Color("PrimaryTextColor"))
                 Text("Total")
                 Spacer()
-                Text("\(milestone.startDate)")
+                Text("\(milestone.totalTimeDurationString)")
             }
+            .padding(.bottom)
             
             HStack {
                 Image(systemName: "hourglass.tophalf.filled")
@@ -45,8 +51,9 @@ struct MilestoneDetails: View {
                     .foregroundColor(Color("PrimaryTextColor"))
                 Text("Past")
                 Spacer()
-                Text("\(milestone.startDate)")
+                Text("\(milestone.pastTimeDurationString)")
             }
+            .padding(.bottom)
             
             HStack {
                 Image(systemName: "hourglass.bottomhalf.filled")
@@ -54,7 +61,7 @@ struct MilestoneDetails: View {
                     .foregroundColor(Color("PrimaryTextColor"))
                 Text("Remaining")
                 Spacer()
-                Text("\(milestone.startDate)")
+                Text("\(milestone.remainingTimeDurationString)")
             }
         }
     }
@@ -62,6 +69,7 @@ struct MilestoneDetails: View {
 
 struct MilestoneDetails_Previews: PreviewProvider {
     static var previews: some View {
-        MilestoneDetails(milestone: Milestone(startDate: Date(timeIntervalSince1970: 1672560000), endDate: Date(timeIntervalSince1970: 1704009600), title: "Title", isFavorite: false))
+        MilestoneDetails(milestoneIndex: 0)
+            .environmentObject(ModelData())
     }
 }

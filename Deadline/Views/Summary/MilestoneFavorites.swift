@@ -31,7 +31,7 @@ struct MilestoneFavorites: View {
             .padding(.bottom)
             
             ForEach(Array(favoriteMilestones.enumerated()), id: \.offset) { index, element in
-                MilestoneItem(milestone: element, showChevron: false)
+                MilestoneItem(milestoneIndex: index, showChevron: false)
                 
                 if (index < favoriteMilestones.count - 1) {
                     Divider()

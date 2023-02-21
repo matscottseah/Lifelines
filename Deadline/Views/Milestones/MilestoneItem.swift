@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct MilestoneItem: View {
-    var milestone: Milestone
+    @EnvironmentObject var modelData: ModelData
+    var milestoneIndex: Int
     var showChevron: Bool = true
+    var isInEditMode: Bool = false
     
+    var milestone: Milestone { modelData.milestones[milestoneIndex] }
     var progressViewValue: Float { Float(DateManager.daysSinceDate(startDate: milestone.startDate)) }
     var progressViewTotal: Float { Float(DateManager.daysBetweenDates(startDate: milestone.startDate, endDate: milestone.endDate)) }
     var progressViewColor: Color {
@@ -24,8 +27,9 @@ struct MilestoneItem: View {
     var body: some View {
         VStack {
             HStack {
-                Text(milestone.title)
-                    .bold()
+                TextField("Milestone Title", text: $modelData.milestones[milestoneIndex].title)
+                    .disabled(isInEditMode)
+                    .font(Font.body.weight(.bold))
                 Spacer()
                 if (showChevron) {
                     Image(systemName: "chevron.forward")
@@ -36,7 +40,7 @@ struct MilestoneItem: View {
             }
             
             HStack {
-                Text("\(milestone.timeDurationString)")
+                Text("\(milestone.remainingTimeDurationString)")
                     .frame(width: 110, alignment: .leading)
                 ProgressView(value: progressViewValue, total: progressViewTotal)
                     .tint(progressViewColor)
@@ -47,7 +51,8 @@ struct MilestoneItem: View {
 
 struct MilestoneItem_Previews: PreviewProvider {
     static var previews: some View {
-        MilestoneItem(milestone: Milestone(startDate: Date(timeIntervalSince1970: 1649314800), endDate: Date(timeIntervalSince1970: 1680850800), title: "Birthday", isFavorite: false))
+        MilestoneItem(milestoneIndex: 0)
+            .environmentObject(ModelData())
             .padding()
     }
 }
