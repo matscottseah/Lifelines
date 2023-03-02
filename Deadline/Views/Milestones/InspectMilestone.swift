@@ -32,5 +32,6 @@ struct InspectMilestone: View {
 struct InspectMilestone_Previews: PreviewProvider {
     static var previews: some View {
         InspectMilestone(milestoneIndex: 0)
+            .environmentObject(ModelData())
     }
 }
