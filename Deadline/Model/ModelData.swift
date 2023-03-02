@@ -10,19 +10,6 @@ import Combine
 
 final class ModelData: ObservableObject {
     @Published var user: User = load("userData.json")
-    @Published var milestones: [Milestone] = load("milestoneData.json")
-    
-    func addMilestone(startDate: Date, endDate: Date, title: String, isFavorite: Bool) {
-        let newMilestone = Milestone(startDate: startDate, endDate: endDate, title: title, isFavorite: isFavorite)
-        milestones.append(newMilestone)
-        milestones.sort(by: { $0.endDate.compare($1.endDate) == .orderedDescending })
-    }
-
-    func removeMilestone(id: String) {
-        if let index = milestones.firstIndex(where: { $0.id == id}) {
-            milestones.remove(at: index)
-        }
-    }
 }
 
 func load<T: Decodable>(_ filename: String) -> T {

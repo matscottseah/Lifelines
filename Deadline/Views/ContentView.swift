@@ -13,15 +13,9 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Color("BackgroundColor").ignoresSafeArea()
-                TabView {
-                    Summary()
-                        .tabItem {
-                            Label("Summary", systemImage: "line.3.horizontal")
-                        }
-                    MilestoneList()
-                        .tabItem {
-                            Label("Milestones", systemImage: "star.fill")
-                        }
+            Summary()
+                .tabItem {
+                    Label("Summary", systemImage: "line.3.horizontal")
                 }
         }
     }

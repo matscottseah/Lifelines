@@ -32,11 +32,6 @@ struct Summary: View {
                         }
                         .buttonStyle(PlainButtonStyle())
                         .padding(.bottom)
-                        
-                        NavigationLink(destination: MilestoneList()) {
-                            Card(content: AnyView(MilestoneFavorites()), width: .infinity)
-                        }
-                        .buttonStyle(PlainButtonStyle())
                     }
                 }
             }
