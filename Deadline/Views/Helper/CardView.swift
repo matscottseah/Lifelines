@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Card: View {
+struct CardView: View {
     var content: AnyView
     var width: CGFloat?
     var height: CGFloat?
@@ -22,9 +22,9 @@ struct Card: View {
     }
 }
 
-struct Card_Previews: PreviewProvider {
+struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        Card(content: AnyView(Text("Placeholder Text")), width: 300, height: nil)
-            .background(Color.red)
+        CardView(content: AnyView(Text("Placeholder Text")), width: 300, height: nil)
+            .background(Color.gray)
     }
 }

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BC1DCB1E2980BCE000A4EBF5 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB1D2980BCE000A4EBF5 /* Header.swift */; };
-		BC1DCB212980EF9A00A4EBF5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB202980EF9A00A4EBF5 /* Card.swift */; };
+		BC1DCB212980EF9A00A4EBF5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB202980EF9A00A4EBF5 /* CardView.swift */; };
 		BC1DCB232982408600A4EBF5 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB222982408600A4EBF5 /* DateManager.swift */; };
 		BC1DCB362987271C00A4EBF5 /* userData.json in Resources */ = {isa = PBXBuildFile; fileRef = BC1DCB352987271C00A4EBF5 /* userData.json */; };
 		BC1DCB38298728A400A4EBF5 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB37298728A400A4EBF5 /* ModelData.swift */; };
@@ -18,15 +18,18 @@
 		BC2EBCC32973C0FF0011F132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2EBCC22973C0FF0011F132 /* Assets.xcassets */; };
 		BC2EBCC62973C0FF0011F132 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2EBCC52973C0FF0011F132 /* Preview Assets.xcassets */; };
 		BC2EBCCD2973C56A0011F132 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCCC2973C56A0011F132 /* Settings.swift */; };
+		BC5ADD3029B2FF1E00C677DD /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5ADD2F29B2FF1E00C677DD /* CircularProgressView.swift */; };
+		BC5ADD3229B8070C00C677DD /* TextWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5ADD3129B8070C00C677DD /* TextWidget.swift */; };
+		BC5ADD3429B80A2C00C677DD /* AllProgressCirclesWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5ADD3329B80A2C00C677DD /* AllProgressCirclesWidget.swift */; };
 		BC986B42297C99CB00E0D68C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC986B41297C99CB00E0D68C /* User.swift */; };
-		BC986B47297CD8FA00E0D68C /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC986B46297CD8FA00E0D68C /* Summary.swift */; };
+		BC986B47297CD8FA00E0D68C /* AllWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC986B46297CD8FA00E0D68C /* AllWidgets.swift */; };
 		BC986B49297DA1F300E0D68C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC986B48297DA1F300E0D68C /* Extensions.swift */; };
-		BCF180BF297F8FDE006305F6 /* LifeProgressBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF180BE297F8FDE006305F6 /* LifeProgressBars.swift */; };
+		BCF180BF297F8FDE006305F6 /* ProgressBarWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF180BE297F8FDE006305F6 /* ProgressBarWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BC1DCB1D2980BCE000A4EBF5 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
-		BC1DCB202980EF9A00A4EBF5 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		BC1DCB202980EF9A00A4EBF5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		BC1DCB222982408600A4EBF5 /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		BC1DCB352987271C00A4EBF5 /* userData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = userData.json; sourceTree = "<group>"; };
 		BC1DCB37298728A400A4EBF5 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -37,10 +40,13 @@
 		BC2EBCC22973C0FF0011F132 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC2EBCC52973C0FF0011F132 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC2EBCCC2973C56A0011F132 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		BC5ADD2F29B2FF1E00C677DD /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		BC5ADD3129B8070C00C677DD /* TextWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWidget.swift; sourceTree = "<group>"; };
+		BC5ADD3329B80A2C00C677DD /* AllProgressCirclesWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProgressCirclesWidget.swift; sourceTree = "<group>"; };
 		BC986B41297C99CB00E0D68C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		BC986B46297CD8FA00E0D68C /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
+		BC986B46297CD8FA00E0D68C /* AllWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWidgets.swift; sourceTree = "<group>"; };
 		BC986B48297DA1F300E0D68C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		BCF180BE297F8FDE006305F6 /* LifeProgressBars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeProgressBars.swift; sourceTree = "<group>"; };
+		BCF180BE297F8FDE006305F6 /* ProgressBarWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,18 +60,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BC1DCB1F2980BD3E00A4EBF5 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				BC2EBCCC2973C56A0011F132 /* Settings.swift */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
 		BC1DCB2829837BAC00A4EBF5 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				BC1DCB202980EF9A00A4EBF5 /* Card.swift */,
+				BC1DCB202980EF9A00A4EBF5 /* CardView.swift */,
+				BC5ADD2F29B2FF1E00C677DD /* CircularProgressView.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -150,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				BC1DCB1D2980BCE000A4EBF5 /* Header.swift */,
-				BC1DCB1F2980BD3E00A4EBF5 /* Settings */,
+				BC2EBCCC2973C56A0011F132 /* Settings.swift */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -158,8 +157,10 @@
 		BC986B45297CD8E700E0D68C /* Summary */ = {
 			isa = PBXGroup;
 			children = (
-				BC986B46297CD8FA00E0D68C /* Summary.swift */,
-				BCF180BE297F8FDE006305F6 /* LifeProgressBars.swift */,
+				BC986B46297CD8FA00E0D68C /* AllWidgets.swift */,
+				BC5ADD3129B8070C00C677DD /* TextWidget.swift */,
+				BCF180BE297F8FDE006305F6 /* ProgressBarWidget.swift */,
+				BC5ADD3329B80A2C00C677DD /* AllProgressCirclesWidget.swift */,
 			);
 			path = Summary;
 			sourceTree = "<group>";
@@ -236,16 +237,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCF180BF297F8FDE006305F6 /* LifeProgressBars.swift in Sources */,
+				BCF180BF297F8FDE006305F6 /* ProgressBarWidget.swift in Sources */,
 				BC2EBCC12973C0FC0011F132 /* ContentView.swift in Sources */,
-				BC1DCB212980EF9A00A4EBF5 /* Card.swift in Sources */,
+				BC1DCB212980EF9A00A4EBF5 /* CardView.swift in Sources */,
 				BC1DCB1E2980BCE000A4EBF5 /* Header.swift in Sources */,
 				BC1DCB232982408600A4EBF5 /* DateManager.swift in Sources */,
-				BC986B47297CD8FA00E0D68C /* Summary.swift in Sources */,
+				BC986B47297CD8FA00E0D68C /* AllWidgets.swift in Sources */,
 				BC1DCB38298728A400A4EBF5 /* ModelData.swift in Sources */,
 				BC986B42297C99CB00E0D68C /* User.swift in Sources */,
+				BC5ADD3429B80A2C00C677DD /* AllProgressCirclesWidget.swift in Sources */,
 				BC986B49297DA1F300E0D68C /* Extensions.swift in Sources */,
 				BC2EBCCD2973C56A0011F132 /* Settings.swift in Sources */,
+				BC5ADD3229B8070C00C677DD /* TextWidget.swift in Sources */,
+				BC5ADD3029B2FF1E00C677DD /* CircularProgressView.swift in Sources */,
 				BC2EBCBF2973C0FC0011F132 /* DeadlineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,16 +12,16 @@ struct DateManager {
         return Calendar.current.ordinality(of: .day, in: .year, for: Date())!
     }
     
-    static var percentOfYearComplete: Int {
-        return Int((Float(dayOfYear)/Float(365) * 100))
+    static var ammountOfYearComplete: Double {
+        return Double((Float(dayOfYear)/Float(365)))
     }
     
     static var dayOfMonth: Int {
         return Calendar.current.ordinality(of: .day, in: .month, for: Date())!
     }
     
-    static var percentOfMonthComplete: Int {
-        return Int((Float(dayOfMonth)/Float(daysInMonth) * 100))
+    static var ammountOfMonthComplete: Double {
+        return Double((Float(dayOfMonth)/Float(daysInMonth)))
     }
     
     static var dayOfWeek: Int {
@@ -29,8 +29,8 @@ struct DateManager {
         return dateComponents.weekday!
     }
     
-    static var percentOfWeekComplete: Int {
-        return Int((Float(dayOfWeek)/Float(7) * 100))
+    static var ammountOfWeekComplete: Double {
+        return Double((Float(dayOfWeek)/Float(7)))
     }
     
     static var daysInMonth: Int {

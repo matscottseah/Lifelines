@@ -20,7 +20,7 @@ struct Header: View {
             Spacer()
             
             Button(action: { showSettings.toggle() } ) {
-                Image(systemName: "person.fill")
+                Image(systemName: "gear")
                     .font(.system(size: 25))
                     .foregroundColor(.black)
             }

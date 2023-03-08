@@ -13,10 +13,7 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Color("BackgroundColor").ignoresSafeArea()
-            Summary()
-                .tabItem {
-                    Label("Summary", systemImage: "line.3.horizontal")
-                }
+            AllWidgets()
         }
     }
 }

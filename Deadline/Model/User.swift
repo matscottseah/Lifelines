@@ -80,7 +80,11 @@ class User: Codable {
         return (1...totalWeeksAlive).map { WeekOfLife(weekNumber: $0, isCompleted: $0 <= wholeWeeksSinceBirth) }
     }
     
-    var percentOfLifeComplete: Int {
-        return Int((Float(daysSinceBirth)/Float(totalDaysAlive) * 100))
+    var ammountOfLifeCompleted: Double {
+        return Double(Float(daysSinceBirth)/Float(totalDaysAlive))
+    }
+    
+    var percentOfLifeCompleted: Int {
+        return Int(Float(daysSinceBirth)/Float(totalDaysAlive) * 100)
     }
 }
