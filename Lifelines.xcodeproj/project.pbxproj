@@ -24,8 +24,39 @@
 		BC986B42297C99CB00E0D68C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC986B41297C99CB00E0D68C /* User.swift */; };
 		BC986B47297CD8FA00E0D68C /* AllWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC986B46297CD8FA00E0D68C /* AllWidgets.swift */; };
 		BC986B49297DA1F300E0D68C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC986B48297DA1F300E0D68C /* Extensions.swift */; };
+		BCAA60F029BA3B5300A2D960 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCAA60EF29BA3B5300A2D960 /* WidgetKit.framework */; };
+		BCAA60F229BA3B5300A2D960 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCAA60F129BA3B5300A2D960 /* SwiftUI.framework */; };
+		BCAA60F529BA3B5300A2D960 /* LifelinesWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAA60F429BA3B5300A2D960 /* LifelinesWidget.swift */; };
+		BCAA60F829BA3B5500A2D960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCAA60F729BA3B5500A2D960 /* Assets.xcassets */; };
+		BCAA60FA29BA3B5500A2D960 /* LifelinesWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = BCAA60F629BA3B5300A2D960 /* LifelinesWidget.intentdefinition */; };
+		BCAA60FB29BA3B5500A2D960 /* LifelinesWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = BCAA60F629BA3B5300A2D960 /* LifelinesWidget.intentdefinition */; };
+		BCAA60FE29BA3B5500A2D960 /* LifelinesWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCAA60ED29BA3B5300A2D960 /* LifelinesWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BCF180BF297F8FDE006305F6 /* ProgressBarWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF180BE297F8FDE006305F6 /* ProgressBarWidget.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCAA60FC29BA3B5500A2D960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC2EBCB32973C0FC0011F132 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCAA60EC29BA3B5300A2D960;
+			remoteInfo = LifelinesWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BCAA60FF29BA3B5500A2D960 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BCAA60FE29BA3B5500A2D960 /* LifelinesWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BC1DCB1D2980BCE000A4EBF5 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
@@ -34,7 +65,7 @@
 		BC1DCB352987271C00A4EBF5 /* userData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = userData.json; sourceTree = "<group>"; };
 		BC1DCB37298728A400A4EBF5 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		BC1DCB392987450E00A4EBF5 /* milestoneData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = milestoneData.json; sourceTree = "<group>"; };
-		BC2EBCBB2973C0FC0011F132 /* Deadline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deadline.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC2EBCBB2973C0FC0011F132 /* Lifelines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lifelines.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2EBCBE2973C0FC0011F132 /* DeadlineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineApp.swift; sourceTree = "<group>"; };
 		BC2EBCC02973C0FC0011F132 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BC2EBCC22973C0FF0011F132 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,6 +77,13 @@
 		BC986B41297C99CB00E0D68C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BC986B46297CD8FA00E0D68C /* AllWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWidgets.swift; sourceTree = "<group>"; };
 		BC986B48297DA1F300E0D68C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BCAA60ED29BA3B5300A2D960 /* LifelinesWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LifelinesWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCAA60EF29BA3B5300A2D960 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		BCAA60F129BA3B5300A2D960 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		BCAA60F429BA3B5300A2D960 /* LifelinesWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifelinesWidget.swift; sourceTree = "<group>"; };
+		BCAA60F629BA3B5300A2D960 /* LifelinesWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = LifelinesWidget.intentdefinition; sourceTree = "<group>"; };
+		BCAA60F729BA3B5500A2D960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCAA60F929BA3B5500A2D960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCF180BE297F8FDE006305F6 /* ProgressBarWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +92,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCAA60EA29BA3B5300A2D960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCAA60F229BA3B5300A2D960 /* SwiftUI.framework in Frameworks */,
+				BCAA60F029BA3B5300A2D960 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				BC2EBCBD2973C0FC0011F132 /* Deadline */,
+				BCAA60F329BA3B5300A2D960 /* LifelinesWidget */,
+				BCAA60EE29BA3B5300A2D960 /* Frameworks */,
 				BC2EBCBC2973C0FC0011F132 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,7 +147,8 @@
 		BC2EBCBC2973C0FC0011F132 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BC2EBCBB2973C0FC0011F132 /* Deadline.app */,
+				BC2EBCBB2973C0FC0011F132 /* Lifelines.app */,
+				BCAA60ED29BA3B5300A2D960 /* LifelinesWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,25 +215,64 @@
 			path = Summary;
 			sourceTree = "<group>";
 		};
+		BCAA60EE29BA3B5300A2D960 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCAA60EF29BA3B5300A2D960 /* WidgetKit.framework */,
+				BCAA60F129BA3B5300A2D960 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCAA60F329BA3B5300A2D960 /* LifelinesWidget */ = {
+			isa = PBXGroup;
+			children = (
+				BCAA60F429BA3B5300A2D960 /* LifelinesWidget.swift */,
+				BCAA60F629BA3B5300A2D960 /* LifelinesWidget.intentdefinition */,
+				BCAA60F729BA3B5500A2D960 /* Assets.xcassets */,
+				BCAA60F929BA3B5500A2D960 /* Info.plist */,
+			);
+			path = LifelinesWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BC2EBCBA2973C0FC0011F132 /* Deadline */ = {
+		BC2EBCBA2973C0FC0011F132 /* Lifelines */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC2EBCC92973C0FF0011F132 /* Build configuration list for PBXNativeTarget "Deadline" */;
+			buildConfigurationList = BC2EBCC92973C0FF0011F132 /* Build configuration list for PBXNativeTarget "Lifelines" */;
 			buildPhases = (
 				BC2EBCB72973C0FC0011F132 /* Sources */,
 				BC2EBCB82973C0FC0011F132 /* Frameworks */,
 				BC2EBCB92973C0FC0011F132 /* Resources */,
+				BCAA60FF29BA3B5500A2D960 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCAA60FD29BA3B5500A2D960 /* PBXTargetDependency */,
+			);
+			name = Lifelines;
+			productName = Deadline;
+			productReference = BC2EBCBB2973C0FC0011F132 /* Lifelines.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCAA60EC29BA3B5300A2D960 /* LifelinesWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCAA610229BA3B5500A2D960 /* Build configuration list for PBXNativeTarget "LifelinesWidgetExtension" */;
+			buildPhases = (
+				BCAA60E929BA3B5300A2D960 /* Sources */,
+				BCAA60EA29BA3B5300A2D960 /* Frameworks */,
+				BCAA60EB29BA3B5300A2D960 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Deadline;
-			productName = Deadline;
-			productReference = BC2EBCBB2973C0FC0011F132 /* Deadline.app */;
-			productType = "com.apple.product-type.application";
+			name = LifelinesWidgetExtension;
+			productName = LifelinesWidgetExtension;
+			productReference = BCAA60ED29BA3B5300A2D960 /* LifelinesWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -198,9 +287,12 @@
 					BC2EBCBA2973C0FC0011F132 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
+					BCAA60EC29BA3B5300A2D960 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 				};
 			};
-			buildConfigurationList = BC2EBCB62973C0FC0011F132 /* Build configuration list for PBXProject "Deadline" */;
+			buildConfigurationList = BC2EBCB62973C0FC0011F132 /* Build configuration list for PBXProject "Lifelines" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -213,7 +305,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BC2EBCBA2973C0FC0011F132 /* Deadline */,
+				BC2EBCBA2973C0FC0011F132 /* Lifelines */,
+				BCAA60EC29BA3B5300A2D960 /* LifelinesWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -227,6 +320,14 @@
 				BC2EBCC62973C0FF0011F132 /* Preview Assets.xcassets in Resources */,
 				BC1DCB3A2987450E00A4EBF5 /* milestoneData.json in Resources */,
 				BC2EBCC32973C0FF0011F132 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCAA60EB29BA3B5300A2D960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCAA60F829BA3B5500A2D960 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,11 +351,29 @@
 				BC2EBCCD2973C56A0011F132 /* Settings.swift in Sources */,
 				BC5ADD3229B8070C00C677DD /* TextWidget.swift in Sources */,
 				BC5ADD3029B2FF1E00C677DD /* CircularProgressView.swift in Sources */,
+				BCAA60FB29BA3B5500A2D960 /* LifelinesWidget.intentdefinition in Sources */,
 				BC2EBCBF2973C0FC0011F132 /* DeadlineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCAA60E929BA3B5300A2D960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCAA60FA29BA3B5500A2D960 /* LifelinesWidget.intentdefinition in Sources */,
+				BCAA60F529BA3B5300A2D960 /* LifelinesWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCAA60FD29BA3B5500A2D960 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCAA60EC29BA3B5300A2D960 /* LifelinesWidgetExtension */;
+			targetProxy = BCAA60FC29BA3B5500A2D960 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BC2EBCC72973C0FF0011F132 /* Debug */ = {
@@ -376,6 +495,7 @@
 		BC2EBCCA2973C0FF0011F132 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,8 +514,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MatthewSeah.Deadline;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MatthewSeah.Lifelines;
+				PRODUCT_NAME = Lifelines;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -405,6 +525,7 @@
 		BC2EBCCB2973C0FF0011F132 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -423,18 +544,72 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MatthewSeah.Deadline;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MatthewSeah.Lifelines;
+				PRODUCT_NAME = Lifelines;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
+		BCAA610029BA3B5500A2D960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZDB377YD39;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LifelinesWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LifelinesWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MatthewSeah.Deadline.LifelinesWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCAA610129BA3B5500A2D960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZDB377YD39;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LifelinesWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LifelinesWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MatthewSeah.Deadline.LifelinesWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BC2EBCB62973C0FC0011F132 /* Build configuration list for PBXProject "Deadline" */ = {
+		BC2EBCB62973C0FC0011F132 /* Build configuration list for PBXProject "Lifelines" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC2EBCC72973C0FF0011F132 /* Debug */,
@@ -443,11 +618,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC2EBCC92973C0FF0011F132 /* Build configuration list for PBXNativeTarget "Deadline" */ = {
+		BC2EBCC92973C0FF0011F132 /* Build configuration list for PBXNativeTarget "Lifelines" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC2EBCCA2973C0FF0011F132 /* Debug */,
 				BC2EBCCB2973C0FF0011F132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCAA610229BA3B5500A2D960 /* Build configuration list for PBXNativeTarget "LifelinesWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCAA610029BA3B5500A2D960 /* Debug */,
+				BCAA610129BA3B5500A2D960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
