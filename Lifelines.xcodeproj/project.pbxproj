@@ -13,7 +13,7 @@
 		BC1DCB362987271C00A4EBF5 /* userData.json in Resources */ = {isa = PBXBuildFile; fileRef = BC1DCB352987271C00A4EBF5 /* userData.json */; };
 		BC1DCB38298728A400A4EBF5 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1DCB37298728A400A4EBF5 /* ModelData.swift */; };
 		BC1DCB3A2987450E00A4EBF5 /* milestoneData.json in Resources */ = {isa = PBXBuildFile; fileRef = BC1DCB392987450E00A4EBF5 /* milestoneData.json */; };
-		BC2EBCBF2973C0FC0011F132 /* DeadlineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCBE2973C0FC0011F132 /* DeadlineApp.swift */; };
+		BC2EBCBF2973C0FC0011F132 /* LifelinesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCBE2973C0FC0011F132 /* LifelinesApp.swift */; };
 		BC2EBCC12973C0FC0011F132 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EBCC02973C0FC0011F132 /* ContentView.swift */; };
 		BC2EBCC32973C0FF0011F132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2EBCC22973C0FF0011F132 /* Assets.xcassets */; };
 		BC2EBCC62973C0FF0011F132 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2EBCC52973C0FF0011F132 /* Preview Assets.xcassets */; };
@@ -66,7 +66,7 @@
 		BC1DCB37298728A400A4EBF5 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		BC1DCB392987450E00A4EBF5 /* milestoneData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = milestoneData.json; sourceTree = "<group>"; };
 		BC2EBCBB2973C0FC0011F132 /* Lifelines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lifelines.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC2EBCBE2973C0FC0011F132 /* DeadlineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineApp.swift; sourceTree = "<group>"; };
+		BC2EBCBE2973C0FC0011F132 /* LifelinesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifelinesApp.swift; sourceTree = "<group>"; };
 		BC2EBCC02973C0FC0011F132 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BC2EBCC22973C0FF0011F132 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC2EBCC52973C0FF0011F132 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 		BC2EBCB22973C0FC0011F132 = {
 			isa = PBXGroup;
 			children = (
-				BC2EBCBD2973C0FC0011F132 /* Deadline */,
+				BC2EBCBD2973C0FC0011F132 /* Lifelines */,
 				BCAA60F329BA3B5300A2D960 /* LifelinesWidget */,
 				BCAA60EE29BA3B5300A2D960 /* Frameworks */,
 				BC2EBCBC2973C0FC0011F132 /* Products */,
@@ -153,10 +153,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BC2EBCBD2973C0FC0011F132 /* Deadline */ = {
+		BC2EBCBD2973C0FC0011F132 /* Lifelines */ = {
 			isa = PBXGroup;
 			children = (
-				BC2EBCBE2973C0FC0011F132 /* DeadlineApp.swift */,
+				BC2EBCBE2973C0FC0011F132 /* LifelinesApp.swift */,
 				BC2EBCD42974DE510011F132 /* Views */,
 				BC2EBCC42973C0FF0011F132 /* Preview Content */,
 				BC1DCB322987266900A4EBF5 /* Helpers */,
@@ -164,7 +164,7 @@
 				BC1DCB332987268900A4EBF5 /* Resources */,
 				BC2EBCC22973C0FF0011F132 /* Assets.xcassets */,
 			);
-			path = Deadline;
+			path = Lifelines;
 			sourceTree = "<group>";
 		};
 		BC2EBCC42973C0FF0011F132 /* Preview Content */ = {
@@ -352,7 +352,7 @@
 				BC5ADD3229B8070C00C677DD /* TextWidget.swift in Sources */,
 				BC5ADD3029B2FF1E00C677DD /* CircularProgressView.swift in Sources */,
 				BCAA60FB29BA3B5500A2D960 /* LifelinesWidget.intentdefinition in Sources */,
-				BC2EBCBF2973C0FC0011F132 /* DeadlineApp.swift in Sources */,
+				BC2EBCBF2973C0FC0011F132 /* LifelinesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,7 +500,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Deadline/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Lifelines/Preview Content\"";
 				DEVELOPMENT_TEAM = ZDB377YD39;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -530,7 +530,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Deadline/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Lifelines/Preview Content\"";
 				DEVELOPMENT_TEAM = ZDB377YD39;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -570,7 +570,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MatthewSeah.Deadline.LifelinesWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MatthewSeah.Lifelines.LifelinesWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -597,7 +597,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MatthewSeah.Deadline.LifelinesWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MatthewSeah.Lifelines.LifelinesWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -1,6 +1,6 @@
 //
 //  TextWidget.swift
-//  Deadline
+//  Lifelines
 //
 //  Created by Matthew Seah on 3/7/23.
 //

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/matthewseah/projects/Deadline/Lifelines.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
